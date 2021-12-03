@@ -154,21 +154,28 @@
 
     //Question no-14
 
-    let arr1=[2,5,6,8,7,9];
-     let arr2=[6,4,5,8,9]
+    let array1=[2,8,6,7,9];
+        let array2=[6,4,6,8,7];
+        var sum1=0;
+        var sum2=0;
+        var total=0;
 
-     function indexsum(){
-        let indexsum1=[];
-        sum=arr1.map((ele)=>{
-            index=indexOf(ele)
-            indexsum1.push(index)
-            console.log(indexsum1)
-        })
-      
-    
-         
-     }
-     indexsum()
+
+        function addindex(){
+        let  indexofarray1= array1.forEach((value,index)=>{
+            // console.log(index)
+            // console.log(value)
+            sum1=sum1+index
+         })
+        // console.log(sum)
+        let  indexofarray2= array2.forEach((value,index)=>{
+                //   console.log(index)
+                sum2=sum2+index
+            })  
+           return sum1+sum2
+        }
+        console.log(addindex())
+
 
 
 
